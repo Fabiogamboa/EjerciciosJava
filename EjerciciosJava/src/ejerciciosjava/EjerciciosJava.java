@@ -7,6 +7,7 @@ public class EjerciciosJava {
         int opcion;
         
         do {
+            System.out.println("");
             System.out.println("Ingrese el número del ejercicio que desea ver (1-29) o 0 para salir:");
             opcion = tomaDato.nextInt();
             
@@ -43,6 +44,10 @@ public class EjerciciosJava {
                     case 8:
                         Ejercicio8 obj8 = new Ejercicio8();
                         obj8.CalcularImc();
+                        break;
+                    case 9:
+                        Ejercicio9 obj9 = new Ejercicio9();
+                        obj9.CalcularCat();
                         break;
                 }
             } else if (opcion != 0) {

@@ -1,4 +1,0 @@
-ejerciciosjava.Mostrar3
-ejerciciosjava.ProcesoPeso
-ejerciciosjava.Ejercicio6
-ejerciciosjava.ProcesoT

@@ -16,14 +16,14 @@ class ProcesoT {
     public static void procesarInfo(int opcion, int temp) {
         System.out.println("Opción ingresada: " + opcion);
         if (opcion <= 10 && opcion >= 0 && temp > 10 && temp <= 27) {
-            Mostrar3.mostrarInfo(true,opcion);
+            Mostrar6.mostrarInfo(true,opcion);
         } else {
-            Mostrar3.mostrarInfo(false,opcion);
+            Mostrar6.mostrarInfo(false,opcion);
         }
     }
 }
 
-class Mostrar3 {
+class Mostrar6 {
     public static void mostrarInfo(boolean estado,int opcion) {
         if (estado) {
             System.out.println("moviendose al piso  :" + opcion);
