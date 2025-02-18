@@ -32,6 +32,18 @@ public class EjerciciosJava {
                         Ejercicio5 obj5 = new Ejercicio5();
                         obj5.TemperaturaUmbral();
                         break;
+                    case 6:
+                        Ejercicio6 obj6 = new Ejercicio6();
+                        obj6.TempAscensor();
+                        break;
+                    case 7:
+                        Ejercicio7 obj7 = new Ejercicio7();
+                        obj7.TiendaDesc();
+                        break;
+                    case 8:
+                        Ejercicio8 obj8 = new Ejercicio8();
+                        obj8.CalcularImc();
+                        break;
                 }
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado está fuera del rango (1-29), hágalo de nuevo :v");
@@ -39,6 +51,5 @@ public class EjerciciosJava {
         } while (opcion != 0);
         
         System.out.println("Finish him Fatality!");
-        tomaDato.close();
     }
 }

@@ -6,22 +6,22 @@ public class Ejercicio5 {
         Scanner dato = new Scanner(System.in);
         System.out.print("Ingrese la temperatura actual  :");
         int opcion = dato.nextInt();
-        ProcesosTemp.procesarInfo(opcion);
+        ProcesosTempUmbral.procesarInfo(opcion);
     }
 }
 
-class ProcesosTemp {
+class ProcesosTempUmbral {
     public static void procesarInfo(int opcion) {
         System.out.println("Opción ingresada: " + opcion + " grados");
         if (opcion <= 25 && opcion >= 18) {
-            MostrarTemp.mostrarInfo(true,opcion);
+            MostrarTempUmbral.mostrarInfo(true,opcion);
         } else {
-            MostrarTemp.mostrarInfo(false,opcion);
+            MostrarTempUmbral.mostrarInfo(false,opcion);
         }
     }
 }
 
-class MostrarTemp {
+class MostrarTempUmbral {
     public static void mostrarInfo(boolean estado,int opcion) {
         if (estado) {
             System.out.println("la temperatura es de "+ opcion + " osea, que es adecuada :v");

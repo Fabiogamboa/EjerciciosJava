@@ -14,14 +14,14 @@ class ProcesoAsc {
     public static void procesarInfo(int opcion) {
         System.out.println("Opción ingresada: " + opcion);
         if (opcion <= 10 && opcion >= 0) {
-            Mostrar.mostrarInfo(true,opcion);
+            Mostrar2.mostrarInfo(true,opcion);
         } else {
-            Mostrar.mostrarInfo(false,opcion);
+            Mostrar2.mostrarInfo(false,opcion);
         }
     }
 }
 
-class Mostrar {
+class Mostrar2 {
     public static void mostrarInfo(boolean estado,int opcion) {
         if (estado) {
             System.out.println("moviendose al piso" + opcion);
