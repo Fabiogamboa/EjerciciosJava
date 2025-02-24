@@ -2,52 +2,37 @@ package ejerciciosjava;
 import java.util.Scanner;
 
 public class Ejercicio10 {
-    public static void CalcularCat() {
+    public static void CalcularCamp() {
         Scanner dato = new Scanner(System.in);
-        System.out.print("Ingrese su edad: ");
-        int edad = dato.nextInt();
-        CategoriaCine.calcularC(edad);
+        System.out.print("Ingrese el resultado del partido (Ganado, Perdido o Empatado): ");
+        String resultado = dato.nextLine().toUpperCase();
+        CategoriaFutbol.calcularF(resultado);
+        dato.close();
     }
 }
 
-class CategoriaCine {
-    public static void calcularC(int edad) {
-        String categoria;
-        if (edad <= 7 && edad >=1) {
-            categoria = "niños" ;
-        } else if (edad >= 8 && edad <= 17) {
-            categoria = "adolescentes";
-        } else if (edad >= 18 && edad <= 30 ) {
-            categoria = "adultos";
-        } else if (edad >= 31  && edad <=100) {
-            categoria = "personas mayores";
-        }
-        else {
-            System.out.println("ponga una edad valida que eso no sirve:v");
-            return;
-        }
-        
-        switch (categoria) {
-            case "niños":
-                mostrarInfoCine.mostrarResultado(categoria, "se recomiendan peliculas de aventura y animadas");
+class CategoriaFutbol {
+    public static void calcularF(String resultado) {
+        String mensaje = "";
+        switch (resultado) {
+            case "EMPATADO":
+                mensaje = "Equipos empatados, no hay puntos pa nadie.";
                 break;
-            case "adolescentes":
-                mostrarInfoCine.mostrarResultado(categoria, " : se recomiendan peliculas de accion y aventura");
+            case "GANADO":
+                mensaje = "mero equipo god, ganó.";
                 break;
-            case "adultos":
-                mostrarInfoCine.mostrarResultado(categoria, " : se recomiendan peliculas romanticas y de accion");
-                break;
-            case "personas mayores":
-                mostrarInfoCine.mostrarResultado(categoria, " : se recomiendan peliculas antiguas y de suspenso");
+            case "PERDIDO":
+                mensaje = "JAJAJAJA, SU EQUIPO PERDIÓ.  Que bots :v";
                 break;
             default:
-                System.out.println("Error por si acaso que uno nunca sabe xd");
+                mensaje = "si te sabes la de leer las instrucciones bro?.";
         }
+        MostrarInfoCam.mostrarResultado(mensaje);
     }
 }
 
-class mostrarInfoCine {
-    public static void mostrarResultado(String categoria, String mensaje) {
-        System.out.printf(categoria + mensaje);
+class MostrarInfoCam {
+    public static void mostrarResultado(String mensaje) {
+        System.out.println(mensaje);
     }
 }

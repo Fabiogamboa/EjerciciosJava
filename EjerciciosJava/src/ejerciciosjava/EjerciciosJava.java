@@ -49,6 +49,22 @@ public class EjerciciosJava {
                         Ejercicio9 obj9 = new Ejercicio9();
                         obj9.CalcularCat();
                         break;
+                    case 10:
+                        Ejercicio10 obj10 = new Ejercicio10();
+                        obj10.CalcularCamp();
+                        break;
+                    case 11:
+                        Ejercicio11 obj11 = new Ejercicio11();
+                        obj11.menuRestaurante();
+                        break;
+                    case 12:
+                        Ejercicio12 obj12 = new Ejercicio12();
+                        obj12.cajeroAutomatico();
+                        break;
+                    case 13:
+                        Ejercicio13 obj13 = new Ejercicio13();
+                        obj13.compraTiendaOnline();
+                        break;
                 }
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado está fuera del rango (1-29), hágalo de nuevo :v");

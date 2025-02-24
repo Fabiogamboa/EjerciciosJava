@@ -26,7 +26,7 @@ class ProcesoT {
 class Mostrar6 {
     public static void mostrarInfo(boolean estado,int opcion) {
         if (estado) {
-            System.out.println("moviendose al piso  :" + opcion);
+            System.out.println("moviedose al piso  :" + opcion);
         } else {
             System.out.println("no existe el piso  :"+ opcion);
         }
