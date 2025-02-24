@@ -8,10 +8,10 @@ public class EjerciciosJava {
         
         do {
             System.out.println("");
-            System.out.println("Ingrese el número del ejercicio que desea ver (1-29) o 0 para salir:");
+            System.out.println("Ingrese el número del ejercicio que desea ver (1-28) o 0 para salir:");
             opcion = tomaDato.nextInt();
             
-            if (opcion >= 1 && opcion <= 29) {
+            if (opcion >= 1 && opcion <= 28) {
                 switch (opcion) {
                     case 1:
                         Ejercicio1 obj1 = new Ejercicio1();
@@ -95,8 +95,36 @@ public class EjerciciosJava {
                         break;
                     case 21:
                        Ejercicio21 obj21 = new Ejercicio21();
-                       obj21.registrarLibros();
+                       obj21.iniciarRegistro();
                        break;
+                    case 22:
+                        Ejercicio22 obj22 = new Ejercicio22();
+                        obj22.tareasGogogo();
+                        break;
+                    case 23:
+                        Ejercicio23 obj23 = new Ejercicio23();
+                        obj23.registroGogo();
+                        break;
+                    case 24:
+                        Ejercicio24 obj24 = new Ejercicio24();
+                        obj24.registroParqueadero();
+                        break;
+                    case 25:
+                        Ejercicio25 obj25 = new Ejercicio25();
+                        obj25.iniciarCompra();
+                        break;
+                    case 26:
+                        Ejercicio26 obj26 = new Ejercicio26();
+                        obj26.yupiAgendaGogo();
+                        break;
+                    case 27:
+                        Ejercicio27 obj27 = new Ejercicio27();
+                        obj27.sumagogo();
+                        break;
+                    case 28:
+                        Ejercicio28 obj28 = new Ejercicio28();
+                        obj28.ventasPro();
+                        break;
                 }
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado está fuera del rango (1-29), hágalo de nuevo :v");

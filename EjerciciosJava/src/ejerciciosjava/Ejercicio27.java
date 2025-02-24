@@ -3,7 +3,7 @@ package ejerciciosjava;
 import java.util.Scanner;
 
 public class Ejercicio27 {
-    public static void gestionarSuma() {
+    public static void sumagogo() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Ingrese la cantidad de números a sumar: ");
@@ -29,8 +29,8 @@ class ValidadorNumero {
                 numero = scanner.nextDouble();
                 break;
             } else {
-                System.out.println("⚠ Entrada inválida. Ingrese un número válido.");
-                scanner.next(); // Limpiar entrada incorrecta
+                System.out.println("Entrada inválida. Ingrese un número válido.");
+                scanner.next();
             }
         }
         return numero;
