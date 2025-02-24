@@ -89,6 +89,14 @@ public class EjerciciosJava {
                         Ejercicio19 obj19 = new Ejercicio19();
                         obj19.menuComidasRapidas();
                         break;
+                    case 20:
+                        Ejercicio20 obj20 = new Ejercicio20();
+                        obj20.sensorTemperatura();
+                        break;
+                    case 21:
+                       Ejercicio21 obj21 = new Ejercicio21();
+                       obj21.registrarLibros();
+                       break;
                 }
             } else if (opcion != 0) {
                 System.out.println("El numero ingresado está fuera del rango (1-29), hágalo de nuevo :v");
