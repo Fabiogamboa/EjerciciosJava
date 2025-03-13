@@ -11,7 +11,7 @@ public class Ejercicio28 {
         scanner.nextLine(); // limpieza :v
 
         double totalVentas = 0;
-        StringBuilder resumenVentas = new StringBuilder("\n📋 Resumen de Ventas 📋\n");
+        StringBuilder resumenVentas = new StringBuilder("\n Resumen de Ventas \n");
 
         // Bucle for para registrar cada producto
         for (int i = 0; i < cantidadProductos; i++) {
@@ -49,7 +49,7 @@ class EntradaDatos {
             System.out.print("Ingrese el precio de '" + producto + "': ");
             if (scanner.hasNextDouble()) {
                 precio = scanner.nextDouble();
-                scanner.nextLine(); // 🔥 Limpia el buffer
+                scanner.nextLine();
                 if (precio >= 0) break;
             }
             System.out.println("Precio no valido ");
@@ -64,7 +64,7 @@ class EntradaDatos {
             System.out.print("Ingrese la cantidad vendida de '" + producto + "': ");
             if (scanner.hasNextInt()) {
                 cantidad = scanner.nextInt();
-                scanner.nextLine(); // 🔥 Limpia el buffer
+                scanner.nextLine();
                 if (cantidad > 0) break;
             }
             System.out.println("cantidad invalida");
